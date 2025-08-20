@@ -18,4 +18,8 @@ ollama create gemma3:27b-fc --file models/gemma3-27b-fc.modelfile
 ollama create gemma3:12b-fc --file models/gemma3-12b-fc.modelfile
 ```
 
-Note that it is recommended to use the 27b parameter model only if you have ~ 20-24 GB of RAM or more.
+Note that it is recommended to use the 27b parameter model only if you have 20-24 GB of RAM or more.
+
+## Usage
+
+You can add more tools by just creating files in the custom tools directory that you mention. Each file must have one or more Python functions with docstrings that contain a description of what the tool does, as well as what the parameters are.
