@@ -1,0 +1,22 @@
+[project]
+name = "cli"
+version = "0.1.0"
+description = "A CLI for function-calling enabled offline agents."
+readme = "readme.md"
+requires-python = ">=3.13"
+dependencies = [
+    "bs4>=0.0.2",
+    "ddgs>=9.5.4",
+    "requests>=2.32.5",
+    "rich>=14.1.0",
+    "sdk",
+    "typer>=0.16.1",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.12.9",
+]
+
+[tool.uv.sources]
+sdk = { path = "../sdk/dist/sdk-0.1.0-py3-none-any.whl" }
