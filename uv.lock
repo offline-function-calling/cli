@@ -296,7 +296,7 @@ requires-dist = [
     { name = "ddgs", specifier = ">=9.5.4" },
     { name = "requests", specifier = ">=2.32.5" },
     { name = "rich", specifier = ">=14.1.0" },
-    { name = "sdk", path = "../sdk/dist/sdk-0.1.0-py3-none-any.whl" },
+    { name = "sdk", path = "vendor/sdk-0.1.0-py3-none-any.whl" },
     { name = "typer", specifier = ">=0.16.1" },
 ]
 
@@ -1224,7 +1224,7 @@ wheels = [
 [[package]]
 name = "sdk"
 version = "0.1.0"
-source = { path = "../sdk/dist/sdk-0.1.0-py3-none-any.whl" }
+source = { path = "vendor/sdk-0.1.0-py3-none-any.whl" }
 dependencies = [
     { name = "aiohttp" },
     { name = "markitdown", extra = ["all"] },
@@ -1232,7 +1232,7 @@ dependencies = [
     { name = "ollama" },
 ]
 wheels = [
-    { filename = "sdk-0.1.0-py3-none-any.whl", hash = "sha256:abe13d3a22d8dea9f77de0e6af346b4bdab84bd9f2dc1c163f8c8822afc5f481" },
+    { filename = "sdk-0.1.0-py3-none-any.whl", hash = "sha256:080ea70b375d8eddde605d03468c80d734664fc6dd427a27e14e8a4502808b72" },
 ]
 
 [package.metadata]

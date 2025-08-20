@@ -19,4 +19,4 @@ dev = [
 ]
 
 [tool.uv.sources]
-sdk = { path = "../sdk/dist/sdk-0.1.0-py3-none-any.whl" }
+sdk = { path = "vendor/sdk-0.1.0-py3-none-any.whl" }
