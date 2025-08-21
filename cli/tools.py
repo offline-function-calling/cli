@@ -78,7 +78,7 @@ class ToolManager:
                     {{
                         "error": {{
                             "name": "ToolExecutionDenied",
-                            "description": "User denied execution of tool '{tool_call.tool.name}'."
+                            "description": "User denied execution of tool '{tool_call.tool}'."
                         }}
                     }}
                     ```
