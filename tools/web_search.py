@@ -9,19 +9,13 @@ def web_search(
     max_results: int = 5,
 ):
     """
-    Performs a web search using DuckDuckGo or other supported search engines.
+    Performs a web search using DuckDuckGo, Google, Bing, etc.
 
     For the model: Use this as a primary tool to answer questions about current
-    events, general knowledge, or anything you don't know. Formulate a concise,
-    effective search query based on the user's prompt.
-
-    **Key Considerations:**
-
-    *   **Search Operators:** Utilize search operators (e.g., `site:`, `filetype:`, `intitle:`) for more precise results.
-    *   **Supported Engines:** The tool supports various search engines, including DuckDuckGo, Google, Bing, Yandex, and more.
-    *   **Result Formats:** While currently returning text snippets, the library supports various result formats like images, videos, and news.
-    *   **Proxies:** Proxies can be set to offer increased privacy
-
+    events, general knowledge, or anything you don't know. Use it when the user
+    asks you to "google" something, or "look it up". Formulate an effective and
+    concise search query based on the user's prompt. Utilize search operators
+    like `site:`, `filetype:`, `intitle:`, etc. for more precise results.
 
     Args:
         query (str): The search query.
