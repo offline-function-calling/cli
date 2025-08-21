@@ -26,6 +26,9 @@ def chat(
     model_name: str = typer.Option(
         "gemma3:12b-fc", "--model", "-m", help="The Ollama model to use"
     ),
+    ollama_host: str = typer.Option(
+        "http://localhost:11434", "--ollama", "-o", help="The Ollama server to use"
+    ),
     system_prompt: Optional[str] = typer.Option(
         None, "--system", "-s", help="The system prompt to use"
     ),
@@ -40,7 +43,7 @@ def chat(
     interface = ChatInterface(console, theme)
 
     config = {
-        "provider": OllamaProvider(model_name),
+        "provider": OllamaProvider(model_name, ollama_host),
         "prompt": system_prompt,
         "tools": tools_dir,
     }
