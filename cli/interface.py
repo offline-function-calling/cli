@@ -265,6 +265,12 @@ class ChatInterface:
             self.console.print(Text(doc, style=self.theme.dim))
             self.console.print()
 
+    def show_tools_reloaded(self, count: int):
+        self.console.print()
+        self.console.print(Text("Tools", style=self.theme.subtitle))
+        self.console.print(Text(f"Reloaded {count} tools", style=self.theme.info))
+        self.console.print()
+
     def show_help(self):
         """Display elegant help information."""
         self.console.print()
