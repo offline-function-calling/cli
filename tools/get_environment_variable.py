@@ -1,5 +1,6 @@
 import os
 
+
 def get_environment_variable(variable_name: str):
     """
     Gets the value of an environment variable.

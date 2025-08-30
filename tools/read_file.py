@@ -1,5 +1,6 @@
 import os
 
+
 def read_file(file_path: str):
     """
     Reads the entire content of a specified file.
@@ -20,7 +21,7 @@ def read_file(file_path: str):
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"The file '{file_path}' does not exist.")
     try:
-        with open(file_path, 'r') as f:
+        with open(file_path, "r") as f:
             return f.read()
     except IOError as e:
         raise IOError(f"Error reading file '{file_path}': {e}")

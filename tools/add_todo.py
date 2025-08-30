@@ -1,5 +1,6 @@
 import os
 
+
 def add_todo(task: str):
     """
     Adds a new task to the todo list.
@@ -19,4 +20,3 @@ def add_todo(task: str):
         return f"Added task: '{task}'"
     except IOError as e:
         return f"Error adding task: {e}"
-

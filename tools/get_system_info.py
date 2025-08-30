@@ -1,5 +1,6 @@
 import psutil
 
+
 def get_system_info():
     """
     Returns detailed information about the system's CPU, RAM, and disk usage.
@@ -19,15 +20,15 @@ def get_system_info():
     swap_mem = psutil.swap_memory()
 
     # Disk Information
-    disk_usage = psutil.disk_usage('/')
+    disk_usage = psutil.disk_usage("/")
     disk_io = psutil.disk_io_counters()
 
     return {
         "cpu": {
             "percent_usage": cpu_percent,
             "core_count": cpu_count,
-            "current_frequency_mhz": cpu_freq.current if cpu_freq else 'N/A',
-            "max_frequency_mhz": cpu_freq.max if cpu_freq else 'N/A',
+            "current_frequency_mhz": cpu_freq.current if cpu_freq else "N/A",
+            "max_frequency_mhz": cpu_freq.max if cpu_freq else "N/A",
         },
         "memory": {
             "virtual": {

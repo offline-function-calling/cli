@@ -1,5 +1,6 @@
 import os
 
+
 def get_file_size(file_path: str):
     """
     Gets the size of a file in bytes.

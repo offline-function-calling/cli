@@ -1,5 +1,6 @@
 import subprocess
 
+
 def run_command(command: str):
     """
     Executes a shell command.
@@ -14,11 +15,7 @@ def run_command(command: str):
     """
     try:
         process = subprocess.run(
-            command,
-            shell=True,
-            capture_output=True,
-            text=True,
-            check=False
+            command, shell=True, capture_output=True, text=True, check=False
         )
         return {
             "stdout": process.stdout,

@@ -1,6 +1,7 @@
 import os
 import shutil
 
+
 def delete_directory(directory_path: str):
     """
     Deletes a directory and its contents recursively.

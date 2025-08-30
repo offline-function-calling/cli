@@ -1,5 +1,6 @@
 import os
 
+
 def list_todos():
     """
     Lists all tasks in the todo list.

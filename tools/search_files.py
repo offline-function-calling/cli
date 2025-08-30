@@ -1,6 +1,7 @@
 import os
 import fnmatch
 
+
 def search_files(directory: str, pattern: str):
     """
     Searches for files matching a pattern in a directory and its subdirectories.

@@ -1,5 +1,6 @@
 import os
 
+
 def delete_file(file_path: str):
     """
     Deletes a specified file.

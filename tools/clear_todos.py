@@ -1,5 +1,6 @@
 import os
 
+
 def clear_todos():
     """
     Clears all tasks from the todo list.

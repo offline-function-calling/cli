@@ -1,6 +1,7 @@
 import os
 import shutil
 
+
 def move_file(source_path: str, destination_path: str):
     """
     Moves or renames a file or directory.

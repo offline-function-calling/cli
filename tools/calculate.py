@@ -1,4 +1,5 @@
-import operator, ast
+import operator
+import ast
 
 
 class CalculationError(Exception):

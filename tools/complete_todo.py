@@ -1,5 +1,6 @@
 import os
 
+
 def complete_todo(task_number: int):
     """
     Marks a task as complete in the todo list.

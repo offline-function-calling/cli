@@ -1,5 +1,3 @@
-import os
-
 def write_file(file_path: str, content: str):
     """
     Writes content to a specified file, overwriting it if it exists.
@@ -17,7 +15,7 @@ def write_file(file_path: str, content: str):
         IOError: If an error occurs while writing to the file.
     """
     try:
-        with open(file_path, 'w') as f:
+        with open(file_path, "w") as f:
             f.write(content)
         return f"Successfully wrote to '{file_path}'."
     except IOError as e:

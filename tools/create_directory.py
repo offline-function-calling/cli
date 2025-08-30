@@ -1,5 +1,6 @@
 import os
 
+
 def create_directory(directory_path: str):
     """
     Creates a new directory.
