@@ -36,7 +36,7 @@ def chat(
         None, "--tools", "-t", help="Directory containing tool definitions"
     ),
 ):
-    """Start an interactive chat session with function calling capabilities."""
+    """A CLI for function-calling enabled offline agents."""
 
     console = Console()
     theme = Theme()
