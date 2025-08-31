@@ -1,6 +1,6 @@
 # Offline Function Calling Agent
 
-This CLI helps you interact with a function calling enabled offline LLM using Ollama. It uses the [`@offline-function-calling/sdk`](https://github.com/offline-function-calling/sdk) library.
+This CLI helps you interact with a function calling enabled offline LLM using Ollama. It uses the [`@offline-function-calling/sdk`](https://github.com/offline-function-calling/sdk) library. You can see screenshots of it in action [here](https://gamemaker1.github.io/projects/offline-function-calling/#sdk-and-cli)!
 
 ## Installation
 
